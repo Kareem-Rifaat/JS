@@ -1,0 +1,329 @@
+//Q1
+/*
+var num1=Number (prompt("please enter First numbers"))
+var num2=Number (prompt("please enter Second numbers"))
+    var sum=0;
+    sum+= num1+num2;
+    window.alert(sum)
+console.log(sum)
+*/
+//Q2
+/*
+var num=prompt("please Enter Number");
+if(num%3==0 && num%4==0){
+  window.alert("Yes");
+  console.log("Yes");
+}
+else{
+  window.alert("No");
+  console.log("No");
+}
+*/
+//Q3
+/*
+var num1=Number(prompt("please Enter First integers"))
+var num2=Number(prompt("please Enter Second integers"))
+if(num1>num2){
+  window.alert(num1);
+  console.log(num1);
+}
+else{
+  window.alert(num2);
+  console.log(num2)
+}
+*/
+//Q4
+/*
+var num=Number(prompt("please Enter an integer"));
+if(num==0){
+  window.alert("0");
+  console.log("0");
+}
+else if(num>0){
+  window.alert("Positive");
+  console.log("Positive");
+}
+else{
+  window.alert("Negative");
+  console.log("Negative");
+}
+*/
+//Q5
+/*
+var num1=Number(prompt("please Enter First integers"))
+var num2=Number(prompt("please Enter Second integers"))
+var num3=Number(prompt("please Enter Third integers"))
+var max=num1;
+var min=num2;
+
+  if(num1<num2){
+    max=num2;
+    min=num1;
+  }
+  if(num3<min){
+    min=num3;
+  }
+  if(num3>max){
+    max=num3
+  }
+  alert("the max is "+max)
+  alert("the min is "+min)
+  console.log("the max is "+max)
+  console.log("the min is "+min)
+*/
+//Q6
+/*
+var num=number(prompt("please Enter Number"));
+if(num%2==0){
+  window.alert("even");
+  console.log("even");
+}
+else{
+  window.alert("odd");
+  console.log("odd");
+}
+*/
+//Q7
+/*
+var myChar=prompt("Please Enter one Character").slice(0,1);
+
+if(myChar=="a" || myChar=="e" || myChar=="i" || myChar=="o" ||  myChar=="u" ||  myChar=="A"||myChar=="E" ||myChar=="I" ||myChar=="O" ||myChar=="U"){
+  window.alert("Vowel")
+  console.log("Vowel")
+}
+else{
+  window.alert("Consonant")
+  console.log("Consonant")
+}
+*/
+//Q8
+/*
+var num=Number(prompt("Please Enter an Integer"));
+for (var i = 1; i <= num; i++) {
+  console.log(i);
+}
+*/
+//Q9
+/*
+var num=Number(prompt("Please Enter an Integer to know the multiplication"));
+for (var i = 1; i <= 12; i++) {
+  console.log(num*i);
+}
+*/
+//Q10
+/*
+var num=Number(prompt("Please Enter an Integer"));
+  for (var i = 1; i <= num; i++) {
+    if(i%2==0){
+      console.log(i);
+    }
+  }
+*/
+//Q11
+/*
+var num1=Number(prompt("Please Enter First Integer to know the power of it "));
+var num2=Number(prompt("Please Enter Second Integer"));
+var res=1;
+for (var i = 1; i <= num2; i++) {
+  res*=num1;
+}
+console.log(res);
+window.alert(num1 + " ^ " + num2 + " = "+res)
+*/
+//Q12
+/*
+var num1=Number(prompt("Please Enter First Integer to know the total , average ,percentage "));
+var num2=Number(prompt("Please Enter Second Integer"));
+var num3=Number(prompt("Please Enter third Integer"));
+var num4=Number(prompt("Please Enter fourth Integer"));
+var num5=Number(prompt("Please Enter fifth Integer"));
+var total=num1+num2+num3+num4+num5;
+var average = total / 5.0;
+var percentage = (total / 500.0) * 100;
+console.log( "The Total marks   = " + total );
+console.log( "The Average marks = " + average );
+console.log( "The Percentage    = " + percentage + "%" );
+*/
+//Q13
+/*
+var month=Number(prompt("Please Enter the Month to Know how many days on it! "));
+
+if(month=="1" || month=="3" || month=="5" || month=="7" || month=="8" || month=="10" || month=="12"){
+  window.alert("This month has 31 Days");
+  console.log("This month has 31 Days");
+}
+else if(month=="4" || month=="6" || month=="9" || month=="11"){
+  window.alert("This month has 30 Days");
+  console.log("This month has 30 Days");
+}
+else if(month=="2"){
+  window.alert("This month has 28/29 Days");
+  console.log("This month has 28/29 Days");
+}
+else{
+  window.alert("IT'S NOT A MONTH !");
+  console.log("IT'S NOT A MONTH !");
+}
+*/
+//Q14
+/*
+var num1=Number(prompt("Please Enter the Physics grade number "));
+var num2=Number(prompt("Please Enter the Chemistry grade number"));
+var num3=Number(prompt("Please Enter the Biology grade number"));
+var num4=Number(prompt("Please Enter the Mathematics grade number"));
+var num5=Number(prompt("Please Enter the Computer grade number"));
+var total=num1+num2+num3+num4+num5;
+var average = total / 5.0;
+var percentage = (total / 500.0) * 100;
+var grade="";
+
+if (average >= 90){
+    grade = 'A';
+  }
+else if (average >= 80 && average < 90){
+    grade = 'B';
+  }
+else if (average >= 70 && average < 80){
+    grade = 'C';
+  }
+else if (average >= 60 && average < 70){
+    grade = 'D';
+  }
+else if(average >= 40 && average < 60){
+    grade= 'E';
+  }
+else{ 
+    grade= 'F';
+  }
+window.alert("The Percentage = " + percentage + "%" +"\n"+ "The grade is " + grade )
+console.log( "The Percentage = " + percentage + "%" );
+console.log( "The grade is " + grade );
+*/
+// Using Switch Case
+//Q15
+/*
+var month=Number(prompt("Please Enter the Month to Know how many days on it! "));
+switch(month) {
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+    window.alert("This month has 31 Days")
+    console.log("This month has 31 Days")
+    break;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+    window.alert("This month has 30 Days")
+    console.log("This month has 30 Days")
+    break;
+    case 2:
+    window.alert("This month has 28 Days")
+    console.log("This month has 28 Days")
+  default:
+    window.alert("This month has 31 Days")
+    console.log("This month has 31 Days")
+}
+*/
+//Q16
+/*
+var alpha=prompt("Please Enter the Month to Know how many days on it! ").slice(0,1);
+switch(alpha) {
+  case "a":
+  case "e":
+  case "i":
+  case "o":
+  case "u":
+  case "A":
+  case "E":
+  case "I":
+  case "O":
+  case "U":
+    window.alert("Vowel")
+    console.log("Vowel")
+    break;
+  default:
+    window.alert("Consonant")
+    console.log("Consonant")
+}
+*/
+//Q17
+/*
+var num1=Number(prompt("Please Enter the first Integer "));
+var num2=Number(prompt("Please Enter the first Integer "));
+switch (true) {
+  case (num1>num2):
+  window.alert("The max is "+num1);
+  console.log("The max is "+num1);
+    break;
+  case (num2>num1):
+  window.alert("The max is "+num2);
+    console.log("The max is "+num2);
+  break;
+  default:
+    window.alert("IT'S NOT A NUMBER!");
+    console.log("IT'S NOT A NUMBER!");
+  }
+  */
+//Q18
+/*
+var num=Number(prompt("Please Enter the first Integer ")); 
+switch (true) {
+  case (num%2==0):
+  window.alert("Even");
+  console.log("Even");
+    break;
+  default:
+    window.alert("Odd");
+    console.log("Odd");
+  }
+*/
+//Q19
+/*
+var num=Number(prompt("Please Enter the first Integer ")); 
+switch (true) {
+  case (num==0):
+  window.alert("Zero");
+  console.log("Zero");
+    break;
+  case (num>0):
+    window.alert("Positive");
+    console.log("Positive");
+      break;
+  default:
+      window.alert("Negative");
+      console.log("Negative");
+  }
+*/
+//Q20
+/*
+var num1=Number(prompt("Please Enter the first Integer ")); 
+var unique=prompt("Please Enter the Unique character Integer "); 
+var num2=Number(prompt("Please Enter the Second Integer ")); 
+switch (unique) {
+  case '+':
+  window.alert(num1+num2);
+  console.log(num1+num2);
+    break;
+  case '-':
+    window.alert(num1-num2);
+    console.log(num1-num2);
+      break;
+  case '*':
+    window.alert(num1*num2);
+    console.log(num1*num2);
+    break;
+  case '/':
+    window.alert(num1/num2);
+    console.log(num1/num2);
+    break;
+  case '%':
+    window.alert(num1%num2);
+    console.log(num1%num2);
+    break;
+  }
+*/
